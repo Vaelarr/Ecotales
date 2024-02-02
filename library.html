@@ -1,0 +1,324 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="media/logo.png" />
+  <script src="https://kit.fontawesome.com/f8c6d79c7d.js" crossorigin="anonymous"></script>
+  <link href="dflip/css/dflip.min.css" rel="stylesheet" type="text/css">
+  <link href="dflip/css/themify-icons.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyBkL4fP5a02CqE6az+Ou80/72X+I0iS/K" crossorigin="anonymous">
+  <title>ECO-TALES</title>
+</head>
+
+<body>
+
+  <!--NAVIGATION-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0B6623;">
+    <div class="container"><a href="index.html" class="navbar-brand nav-logo-brand fs-3 fw-bold"
+        style="padding-right: 10px; margin-left: 1rem;">ECO-TALES</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav">
+          <a href="library.html" class="nav-link fs-6">EcoStories</a>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link fs-6 main-nav-item" role="button" id="ourGoalsDropdownLink" aria-haspopup="true"
+              aria-expanded="false" margin-bottom: 1px;">Our Goals <i class="fa-solid fa-caret-down"
+                style="color: #ffffff;"></i></a>
+            <div class="dropdown-menu" aria-labelledby="ourGoalsDropdownLink">
+              <a class="dropdown-item" style="color: white;" href="goals.html#mission">Mission</a>
+              <a class="dropdown-item" style="color: white;" href="goals.html#vision">Vision</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link fs-6 main-nav-item" role="button" id="aboutUsDropdownLink" aria-haspopup="true"
+              aria-expanded="false" margin-bottom: 1px;">Our City's Initiative <i class="fa-solid fa-caret-down"
+                style="color: #ffffff;"></i></a>
+            <div class="dropdown-menu" aria-labelledby="aboutUsDropdownLink">
+              <a class="dropdown-item" style="color: white;" href="qcservices.html">QC Services</a>
+              <a class="dropdown-item" style="color: white;" href="partners.html">Our Partners</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link fs-6 main-nav-item" role="button" id="aboutUsDropdownLink" aria-haspopup="true"
+              aria-expanded="false" margin-bottom: 1px;">About Us <i class="fa-solid fa-caret-down"
+                style="color: #ffffff;"></i></a>
+            <div class="dropdown-menu" aria-labelledby="aboutUsDropdownLink">
+              <a class="dropdown-item" style="color: white;" href="about-us.html#OurStory">Our Story at A Glance</a>
+              <a class="dropdown-item" style="color: white;" href="about-us.html#TheOrg">The Organization</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link fs-6" role="button" id="moreDropdownLink" aria-haspopup="true"
+              aria-expanded="false">
+              More <i class=" fa-solid fa-caret-down" style="color: #ffffff;"></i>
+            </a>
+            <div class=" dropdown-menu" aria-labelledby="moreDropdownLink">
+              <a class="dropdown-item" style="color: white;" href="documentation.html">Documentation</a>
+              <a class="dropdown-item" style="color: white;" href="roots.html#FAQs">FAQs</a>
+              <a class="dropdown-item" style="color: white;" href="roots.html#ContactUs">Contact Us</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav-item ms-auto" style="padding-top: 15px;">
+          <img src="media/pilipinas.png" width="120px" height="55px" style="margin-right: 8px;" />
+          <img src="media/lungsod.png" width="38px" height="34px" style="margin: 0 0px 0 -5px;" />
+          <img src="media/sdo.png" width="35px" height="37px" style="margin-right: 3px;" />
+          <img src="media/centrex.png" width="35px" height="35px" />
+          <img src="media/lhs.png" width="36px" height="37px" style="margin-left: 3px;" />
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--LIBRARY SECTION -->
+  <div class="container" id="library" style="margin-top: 90px;">
+    <div class="row text-center">
+      <h2 class="font-text" style="font-weight: bold; margin-top: 30px; margin-bottom: 20px;">EcoStories</h2>
+    </div>
+  </div>
+
+  <div class="row text-center haha" style="margin-bottom: 120px;">
+    <div>
+      <span id="img-hover">
+        <div style="position: relative; text-align: center;">
+          <img src="books/cover1.png" class="d-block mx-auto w-100 img-fluid" alt="..." id="book-cover-filter"
+            onclick="enableButtons()">
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <button
+              data-form-link="https://docs.google.com/forms/d/e/1FAIpQLSfz6c1EQiUpzpoCOHdJydSi557oUK4WZjvR2tR477HhM3vESw/viewform?embedded=true"
+              class="hidden-button button-design form-button"
+              style="transition: opacity 0.2s ease-in-out; min-width: 50px;">Assessment</button>
+            <button class="hidden-button button-design _df_custom" source="books/dream.pdf"
+              style="transition: opacity 0.2s ease-in-out; min-width: 50px; margin-top: 10px;"
+              id="readButton">Read</button>
+          </div>
+        </div>
+      </span>
+      <h4 class="fw-bold">Once Upon a Dream</h4>
+      <h6>Written by Ria Althea Sistona</h6>
+    </div>
+
+    <div>
+      <span id="img-hover">
+        <div style="position: relative; text-align: center;">
+          <img src="books/cover2.png" class="d-block mx-auto w-100 img-fluid" alt="..." id="book-cover-filter">
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <button
+              data-form-link="https://docs.google.com/forms/d/e/1FAIpQLScXTKyylJe4LWFd4MvOWCHnIKAIWBdVW2zHenA1n394Y-II_g/viewform?embedded=true"
+              class="hidden-button button-design form-button"
+              style="transition: opacity 0.2s ease-in-out; min-width: 50px;">Assessment</button>
+            <button class="hidden-button button-design _df_custom" source="books/adventures.pdf"
+              style="transition: opacity 0.2s ease-in-out; min-width: 50px; margin-top: 10px;">Read</button>
+          </div>
+        </div>
+      </span>
+      <h4 class="fw-bold">The Adventures of Captain Clean</h4>
+      <h6>Written by Zyril Trish Garma</h6>
+    </div>
+
+    <div>
+      <span id="img-hover">
+        <div style="position: relative; text-align: center;">
+          <img src="books/cover3.png" class="d-block mx-auto w-100 img-fluid" alt="..." id="book-cover-filter">
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <button
+              data-form-link="https://docs.google.com/forms/d/e/1FAIpQLSdCcmSmtQyUFfDWbMgF93Oty8XhonyS6jkXmcASBohYkVFdQg/viewform?embedded=true"
+              class="hidden-button button-design form-button"
+              style="transition: opacity 0.2s ease-in-out; min-width: 50px;">Assessment</button>
+            <button class="hidden-button button-design _df_custom" source="books/ecohorror.pdf"
+              style="transition: opacity 0.2s ease-in-out; min-width: 50px; margin-top: 10px;">Read</button>
+          </div>
+        </div>
+      </span>
+      <h4 class="fw-bold">The Eco-Horror of the Carbon Footprint Freak</h4>
+      <h6>Written by Shlight Reign Alibasa</h6>
+    </div>
+
+    <div>
+      <span id="img-hover">
+        <div style="position: relative; text-align: center;">
+          <img src="books/cover4.png" class="d-block mx-auto w-100 img-fluid" alt="..." id="book-cover-filter">
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <button
+              data-form-link="https://docs.google.com/forms/d/e/1FAIpQLSfQTVdvH_GaC66X9kxPk0xYntkJaoZqRiFs6mCiG1CEsbslrQ/viewform?embedded=true"
+              class="hidden-button button-design form-button"
+              style="transition: opacity 0.2s ease-in-out; min-width: 50px;">Assessment</button>
+            <button class="hidden-button button-design _df_custom" source="books/Look.pdf"
+              style="transition: opacity 0.2s ease-in-out; min-width: 50px; margin-top: 10px;">Read</button>
+          </div>
+        </div>
+      </span>
+      <h4 class="fw-bold">If Only We Would Look After Her</h4>
+      <h6> Written by Sereena Belen</h6>
+    </div>
+
+    <div>
+      <span id="img-hover">
+        <div style="position: relative; text-align: center;">
+          <img src="books/cover5.png" class="d-block mx-auto w-100 img-fluid" alt="..." id="book-cover-filter">
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <button
+              data-form-link="https://docs.google.com/forms/d/e/1FAIpQLScgy2ONBWqbOa3LDpRPupnYD_TePtsOhcuFTDOFjipBPw3_Zw/viewform?embedded=true"
+              class="hidden-button button-design form-button"
+              style="transition: opacity 0.2s ease-in-out; min-width: 50px;">Assessment</button>
+            <button class="hidden-button button-design _df_custom" source="books/seedlings.pdf"
+              style="transition: opacity 0.2s ease-in-out; min-width: 50px; margin-top: 10px;">Read</button>
+          </div>
+        </div>
+      </span>
+      <h4 class="fw-bold">Concrete Seedlings</h4>
+      <h6>Written by Shawn Pagarigan</h6>
+    </div>
+  </div>
+
+  <!-- Overlay container -->
+  <div class="overlay" id="overlay">
+    <div class="popup" style="margin-top: 30px;">
+      <span class="close-btn" onclick="closeOverlay()">&times;</span>
+      <iframe id="googleFormIframe" width="540" height="600" frameborder="0" marginheight="100"
+        marginwidth="0">Loading…</iframe>
+    </div>
+  </div>
+
+  <footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3"
+      style="background-color: #0B6623; color: white; display: flex; align-items: center; justify-content: center; gap: 2px;">
+      © 2023 Copyright:
+      <a class="text-light text-decoration-none fw-bold" href="#" style="margin-left: 3px;">ECO-TALES</a>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script src="dflip/js/libs/jquery.min.js" type="text/javascript"></script>
+  <script src="dflip/js/dflip.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-0UukkCEzOXhL6P8Q/jXWm50JSNqF7e9Q4FksfGtxAiS51wCC9S5cRhx4soPp5O6h"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyBkL4fP5a02CqE6az+Ou80/72X+I0iS/K"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-0UukkCEzOXhL6P8Q/jXWm50JSNqF7e9Q4FksfGtxAiS51wCC9S5cRhx4soPp5O6h"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyBkL4fP5a02CqE6az+Ou80/72X+I0iS/K"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // const assessmentButton = document.getElementById('assessmentButton');
+    // const readButton = document.getElementById('readButton');
+
+    // if (window.innerWidth <= 768) {
+    //   assessmentButton.disabled = true;
+    //   readButton.disabled = true;
+    // } else {
+    //   assessmentButton.disabled = false;
+    //   readButton.disabled = false;
+    // }
+
+    // function enableButtons() {
+    //   // Enable the buttons when the image is clicked
+    //   document.getElementById('assessmentButton').disabled = false;
+    //   document.getElementById('readButton').disabled = false;
+    // }
+
+    // Function to open the popup with the specified Google Form link
+    function openOverlay(googleFormLink) {
+      var overlay = document.getElementById("overlay");
+      var iframe = document.getElementById("googleFormIframe");
+
+      // Set the iframe source to the specified Google Form link
+      iframe.src = googleFormLink;
+
+      overlay.style.display = "block";
+      console.log("Overlay opened.")
+    }
+
+    // Function to close the popup
+    function closeOverlay() {
+      var overlay = document.getElementById("overlay");
+      overlay.style.display = "none";
+    }
+
+    // Close the popup when clicking outside the popup content
+    overlay.addEventListener('click', (event) => {
+      if (event.target === overlay) {
+        closeOverlay();
+      }
+    });
+
+    // Close the popup with the 'Esc' key
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        closeOverlay();
+      }
+    });
+
+    // Add click event listeners to all buttons with the 'form-button' class
+    var formButtons = document.querySelectorAll('.form-button');
+    formButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        var formLink = button.getAttribute('data-form-link');
+        openOverlay(formLink);
+      });
+    });
+
+  </script>
+  <script>
+    function openPopup() {
+      document.getElementById("overlay").style.display = "block";
+      document.getElementById("googleFormPopup").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("overlay").style.display = "none";
+      document.getElementById("googleFormPopup").style.display = "none";
+    }
+
+    function closeConfirmationPopup() {
+      document.getElementById("overlay").style.display = "none";
+      document.getElementById("confirmationPopup").style.display = "none";
+    }
+
+    function confirmRead() {
+      // Add your logic for handling the confirmation
+      alert("Book confirmed! Add your logic here.");
+      closeConfirmationPopup();
+    }
+
+    // Add your form submission handling here, and show the confirmation popup after submission
+    // For example, using jQuery
+    $(document).ready(function () {
+      $('iframe').on('load', function () {
+        $('iframe').contents().find("form").submit(function () {
+          // Handle form submission
+          // Show the confirmation popup
+          document.getElementById("confirmationPopup").style.display = "block";
+          return false; // Prevent the form from actually submitting
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
