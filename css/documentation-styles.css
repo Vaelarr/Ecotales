@@ -19,10 +19,6 @@ body {
   font-size: 35px;
 }
 
-.navbar {
-  border-bottom: 1.5px solid #283a77;
-}
-
 .custom-btn {
   position: absolute;
   bottom: 10px;
@@ -73,21 +69,6 @@ body {
 
 .navbar .nav-link a:hover {
   color: rgb(143, 143, 143);
-}
-
-.navbar-nav .dropdown:hover .dropdown-menu {
-  display: block;
-  margin: 0;
-  /* Adjust the top margin as needed */
-  box-shadow: none;
-  /* Remove box shadow */
-  border: none;
-  /* Remove border */
-  background-color: #1F2E60;
-}
-
-.navbar-nav .dropdown-menu a:hover {
-  background-color: #1a264c;
 }
 
 #home {
